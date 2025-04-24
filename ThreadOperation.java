@@ -7,5 +7,10 @@ CSCI 2251 R01
 */
 
 public class ThreadOperation extends Thread {
-		
+	
+	
+	@Override //not sure if i need this, double check
+	public void run() {
+		return;
+	}
 }
