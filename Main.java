@@ -1,4 +1,11 @@
 /*
+Fielding Parsons
+add matrices
+April 24 2025
+Matrix addition
+CSCI 2251 R01
+*/
+/*
 This code is provided to give you a
 starting place. It should be modified.
 No further imports are needed.
