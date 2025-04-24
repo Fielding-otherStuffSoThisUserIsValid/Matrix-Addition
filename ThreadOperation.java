@@ -9,7 +9,7 @@ CSCI 2251 R01
 public class ThreadOperation extends Thread {
 	private int[][] submatrixOfA;
 	private int[][] submatrixOfB;
-	
+	private enum Quadrant {UPPER_LEFT, UPPER_RIGHT, LOWER_LEFT, LOWER_RIGHT};
 	
 	@Override //not sure if i need this, double check
 	public void run() {
