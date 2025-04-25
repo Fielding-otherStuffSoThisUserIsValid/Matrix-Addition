@@ -47,6 +47,7 @@ public class Main
 		};
 		
 		//File reading:
+		Scanner fileIn = null;
 		try {
 			if (!args[0].endsWith(".txt")) {
 				throw new IOException(); //https://www.geeksforgeeks.org/throw-throws-java/
