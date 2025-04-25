@@ -49,7 +49,7 @@ public class Main
 		//File reading:
 		try {
 			if (!args[0].endsWith(".txt")) {
-				//throw exception
+				throw new IOException();
 			}
 			//File matrixFile = new File()
 		} catch (IOException e) {
