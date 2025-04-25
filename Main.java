@@ -70,6 +70,8 @@ public class Main
 	}
 	
 	public static void print2dArray(int[][] matrix) {
-		
+		for (int i = 0; i < matrix.length; i++) {
+			System.out.printf(matrix[i]+" ");
+		}
 	}
 }
