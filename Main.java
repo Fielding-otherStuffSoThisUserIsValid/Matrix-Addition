@@ -76,7 +76,7 @@ public class Main
 			for (int j = 0; j < matrix[0].length; j++) {
 				System.out.printf(matrix[i][j]+" ");
 			}
-			System.out.println();
+			System.out.printf("\n");
 		}
 	}
 }
