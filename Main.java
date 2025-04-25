@@ -75,6 +75,8 @@ public class Main
 		System.out.println(numOfRows);
 		System.out.println(numOfCols);
 		createMatrixFromFile(numOfRows, numOfCols, fileIn);
+		System.out.println();
+		createMatrixFromFile(numOfRows, numOfCols, fileIn);
 		//if matrix names change when we're using the actual matrices, change the names here.
 		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
 		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_RIGHT);
@@ -115,6 +117,7 @@ public class Main
 				matrix[i][j] = fileIn.nextInt();
 			}
 		}
+		print2dArray(matrix);
 		return null; //PLACEHOLDER
 	}
 }
