@@ -58,17 +58,8 @@ public class Main
 		int[][] matrix1 = createMatrixFromFile(numOfRows, numOfCols, fileIn);
 		int[][] matrix2 = createMatrixFromFile(numOfRows, numOfCols, fileIn);;
 		
-		//TESTING CODE:
-		print2dArray(matrix1);
-		System.out.println();
-		print2dArray(matrix2);
-		System.out.println();
-		System.out.println(numOfRows);
-		System.out.println(numOfCols);
-		//createMatrixFromFile(numOfRows, numOfCols, fileIn);
-		System.out.println();
-		//createMatrixFromFile(numOfRows, numOfCols, fileIn);
-		//if matrix names change when we're using the actual matrices, change the names here.
+		
+		
 		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
 		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_RIGHT);
 		ThreadOperation LowerLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_LEFT);
@@ -88,6 +79,17 @@ public class Main
 			System.out.println("There was an InterruptedException: \n");
 			e.printStackTrace();
 		}
+		
+		//TESTING CODE:
+		/*print2dArray(matrix1);
+		System.out.println();
+		print2dArray(matrix2);
+		System.out.println();
+		System.out.println(numOfRows);
+		System.out.println(numOfCols);
+		//createMatrixFromFile(numOfRows, numOfCols, fileIn);
+		System.out.println();
+		//createMatrixFromFile(numOfRows, numOfCols, fileIn);*/
 		
 	}
 	
