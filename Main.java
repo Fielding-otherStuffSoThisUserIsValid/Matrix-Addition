@@ -47,12 +47,15 @@ public class Main
 		};
 		
 		//File reading:
-		try {
-			
-		} catch (IOException e) {
+		//try {
+			if (args[0].endsWith(".txt")) {
+				System.out.println("text file!"); //test code
+			}
+			//File matrixFile = new File()
+		/*} catch (IOException e) {
 			System.out.println("there was an IOException, or the file was not a .txt file");
 			e.printStackTrace();
-		}
+		}*/
 		
 		//TESTING CODE:
 		print2dArray(matrix1);
