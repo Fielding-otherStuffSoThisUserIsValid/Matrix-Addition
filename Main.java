@@ -112,7 +112,7 @@ public class Main
 		
 		for (int i = 0; i < numOfRows; i++) {
 			for (int j = 0; j < numOfCols; j++) {
-				
+				matrix[i][j] = fileIn.nextInt();
 			}
 		}
 		return null; //PLACEHOLDER
