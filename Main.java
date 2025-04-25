@@ -44,6 +44,7 @@ public class Main
 			{2, 1}
 		};
 		
+		//if matrix names change when we're using the actual matrices, change the names here.
 		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
 		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_RIGHT);
 		ThreadOperation LowerLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_LEFT);
@@ -53,6 +54,8 @@ public class Main
 		UpperRightThreadOperation.start();
 		LowerLeftThreadOperation.start();
 		LowerRightThreadOperation.start();
+		
+		
 	}
 
 }
