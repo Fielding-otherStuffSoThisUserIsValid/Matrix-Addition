@@ -41,7 +41,7 @@ public class Main
 			{4, 3},
 			{2, 1}
 		};
-		//ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
+		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
 		
 		
 	}
