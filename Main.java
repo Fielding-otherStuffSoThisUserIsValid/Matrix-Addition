@@ -50,6 +50,9 @@ public class Main
 		ThreadOperation LowerRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_RIGHT);
 		
 		UpperLeftThreadOperation.start();
+		UpperRightThreadOperation.start();
+		LowerLeftThreadOperation.start();
+		LowerRightThreadOperation.start();
 	}
 
 }
