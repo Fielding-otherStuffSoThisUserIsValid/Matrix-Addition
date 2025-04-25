@@ -109,7 +109,10 @@ public class Main
 	
 	public static int[][] createMatrixFromFile(int numOfRows, int numOfCols, Scanner fileIn) {
 		int[][] matrix = new int[numOfRows][numOfCols];
-		print2dArray(matrix);
+		
+		for (int i = 0; i < numOfRows; i++) {
+			
+		}
 		return null; //PLACEHOLDER
 	}
 }
