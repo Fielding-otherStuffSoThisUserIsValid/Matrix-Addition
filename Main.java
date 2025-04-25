@@ -35,13 +35,15 @@ public class Main
 		System.out.println();
 		
 		int[][] matrix1 =  {
-			{1, 2},
-			{3, 4}
+			{1, 2, 3},
+			{4, 5, 6},
+			{7, 8, 9}
 		};
 		
 		int[][] matrix2 = {
-			{4, 3},
-			{2, 1}
+			{9, 8, 7},
+			{6, 5, 4},
+			{3, 2, 1}
 		};
 		
 		//if matrix names change when we're using the actual matrices, change the names here.
