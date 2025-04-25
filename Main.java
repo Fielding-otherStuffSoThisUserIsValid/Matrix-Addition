@@ -49,6 +49,7 @@ public class Main
 		ThreadOperation LowerLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_LEFT);
 		ThreadOperation LowerRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_RIGHT);
 		
+		UpperLeftThreadOperation.start();
 	}
 
 }
