@@ -111,7 +111,9 @@ public class Main
 		int[][] matrix = new int[numOfRows][numOfCols];
 		
 		for (int i = 0; i < numOfRows; i++) {
-			
+			for (int j = 0; j < numOfCols; j++) {
+				
+			}
 		}
 		return null; //PLACEHOLDER
 	}
