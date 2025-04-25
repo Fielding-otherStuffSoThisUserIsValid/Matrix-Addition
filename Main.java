@@ -34,18 +34,6 @@ public class Main
 	{
 		System.out.println();
 		
-		int[][] matrix1 =  {
-			{1, 2, 3},
-			{4, 5, 6},
-			{7, 8, 9}
-		};
-		
-		int[][] matrix2 = {
-			{9, 8, 7},
-			{6, 5, 4},
-			{3, 2, 1}
-		};
-		
 		//File reading:
 		Scanner fileIn = null;
 		try {
@@ -64,13 +52,24 @@ public class Main
 			System.exit(2);
 		}
 		
+		int[][] matrix1 =  {
+			{1, 2, 3},
+			{4, 5, 6},
+			{7, 8, 9}
+		};
+		
+		int[][] matrix2 = {
+			{9, 8, 7},
+			{6, 5, 4},
+			{3, 2, 1}
+		};
 		
 		//TESTING CODE:
 		print2dArray(matrix1);
 		System.out.println();
 		print2dArray(matrix2);
 		System.out.println();
-		System.out.println(fileIn.nextLine());
+		//System.out.println(fileIn.nextLine());
 		//if matrix names change when we're using the actual matrices, change the names here.
 		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
 		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_RIGHT);
