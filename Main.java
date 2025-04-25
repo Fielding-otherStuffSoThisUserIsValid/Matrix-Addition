@@ -33,16 +33,21 @@ public class Main
 	public static void main(String[] args) 
 	{
 		System.out.println();
+		
 		int[][] matrix1 =  {
 			{1, 2},
 			{3, 4}
 		};
+		
 		int[][] matrix2 = {
 			{4, 3},
 			{2, 1}
 		};
-		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
 		
+		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
+		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_RIGHT);
+		ThreadOperation LowerLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_LEFT);
+		ThreadOperation LowerRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_RIGHT);
 		
 	}
 
