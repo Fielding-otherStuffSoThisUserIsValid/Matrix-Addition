@@ -55,6 +55,7 @@ public class Main
 		LowerLeftThreadOperation.start();
 		LowerRightThreadOperation.start();
 		
+		//Joins here:
 		
 	}
 
