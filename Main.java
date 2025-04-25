@@ -37,6 +37,10 @@ public class Main
 			{1, 2},
 			{3, 4}
 		};
+		int[][] matrix2 = {
+			{4, 3},
+			{2, 1}
+		};
 		//ThreadOperation UpperLeftThreadOperation = new ThreadOperation()
 		
 		
