@@ -53,9 +53,12 @@ public class Main
 			}
 			//File matrixFile = new File()
 		} catch (IOException e) {
-			System.out.println("there was an IOException, or the file was not a .txt file");
+			System.out.println("There was an IOException, or the file was not a .txt file");
 			e.printStackTrace();
-		} 
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("There was an ArrayIndexOutOfBoundsException:");
+			e.printStackTrace();
+		}
 		
 		//TESTING CODE:
 		print2dArray(matrix1);
