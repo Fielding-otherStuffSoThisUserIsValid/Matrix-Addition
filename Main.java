@@ -55,7 +55,6 @@ public class Main
 		LowerLeftThreadOperation.start();
 		LowerRightThreadOperation.start();
 		
-		//Joins here:
 		try {
 			UpperLeftThreadOperation.join();
 			UpperRightThreadOperation.join();
