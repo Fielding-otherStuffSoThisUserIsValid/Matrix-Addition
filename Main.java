@@ -30,7 +30,7 @@ import java.util.Scanner;
 
 public class Main
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws IOException
 	{
 		System.out.println();
 		
@@ -47,15 +47,15 @@ public class Main
 		};
 		
 		//File reading:
-		//try {
-			if (args[0].endsWith(".txt")) {
-				System.out.println("text file!"); //test code
+		try {
+			if (!args[0].endsWith(".txt")) {
+				//throw exception
 			}
 			//File matrixFile = new File()
-		/*} catch (IOException e) {
+		} catch (IOException e) {
 			System.out.println("there was an IOException, or the file was not a .txt file");
 			e.printStackTrace();
-		}*/
+		} 
 		
 		//TESTING CODE:
 		print2dArray(matrix1);
