@@ -52,6 +52,9 @@ public class Main
 			System.exit(2);
 		}
 		
+		int numOfRows = fileIn.nextInt();
+		int numOfCols = fileIn.nextInt();
+		
 		int[][] matrix1 =  {
 			{1, 2, 3},
 			{4, 5, 6},
