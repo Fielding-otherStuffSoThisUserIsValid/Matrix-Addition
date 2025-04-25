@@ -46,6 +46,14 @@ public class Main
 			{3, 2, 1}
 		};
 		
+		//File reading:
+		try {
+			
+		} catch (IOException e) {
+			System.out.println("there was an IOException, or the file was not a .txt file");
+			e.printStackTrace();
+		}
+		
 		//TESTING CODE:
 		print2dArray(matrix1);
 		System.out.println();
