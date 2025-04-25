@@ -53,6 +53,7 @@ public class Main
 				throw new IOException(); //https://www.geeksforgeeks.org/throw-throws-java/
 			}
 			File matrixFile = new File(args[0]);
+			fileIn = new Scanner(matrixFile);
 		} catch (IOException e) {
 			System.out.println("There was an IOException, or the file was not a .txt file");
 			e.printStackTrace();
