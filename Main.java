@@ -49,9 +49,9 @@ public class Main
 		//File reading:
 		try {
 			if (!args[0].endsWith(".txt")) {
-				throw new IOException();
+				throw new IOException(); //https://www.geeksforgeeks.org/throw-throws-java/
 			}
-			//File matrixFile = new File()
+			File matrixFile = new File(args[0]);
 		} catch (IOException e) {
 			System.out.println("There was an IOException, or the file was not a .txt file");
 			e.printStackTrace();
