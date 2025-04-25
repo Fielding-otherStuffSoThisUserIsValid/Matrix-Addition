@@ -33,6 +33,10 @@ public class Main
 	public static void main(String[] args) 
 	{
 		System.out.println();
+		int[][] matrix1 =  {
+			{1, 2},
+			{3, 4}
+		};
 		//ThreadOperation UpperLeftThreadOperation = new ThreadOperation()
 		
 		
