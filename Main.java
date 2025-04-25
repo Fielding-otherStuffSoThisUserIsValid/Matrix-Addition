@@ -55,9 +55,11 @@ public class Main
 		} catch (IOException e) {
 			System.out.println("There was an IOException, or the file was not a .txt file");
 			e.printStackTrace();
+			System.exit(1);
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("There was an ArrayIndexOutOfBoundsException:");
 			e.printStackTrace();
+			System.exit(2);
 		}
 		
 		//TESTING CODE:
