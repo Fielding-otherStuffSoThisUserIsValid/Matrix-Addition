@@ -56,6 +56,15 @@ public class Main
 		LowerRightThreadOperation.start();
 		
 		//Joins here:
+		try {
+			UpperLeftThreadOperation.join();
+			UpperRightThreadOperation.join();
+			LowerLeftThreadOperation.join();
+			LowerRightThreadOperation.join();
+		} catch (InterruptedException e) {
+			System.out.println("There was an InterruptedException: \n");
+			e.printStackTrace();
+		}
 		
 	}
 
