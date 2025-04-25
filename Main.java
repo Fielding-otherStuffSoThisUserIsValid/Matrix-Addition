@@ -23,6 +23,9 @@ threads compared to processes, etcetera,
 and connect these issues to 
 multi-threading.
 
+A1: Multi-threading can solve problems faster than just using one thread; multicore machines (running a program in parallel) can also solve problems faster, but I believe it is more resource-intenstive than multi-threading, and definitely so if we're not talking exclusivly about computational resoures (for example, it requires more money).
+The less time the computer spends devoting resources to solving a problem, the sooner it can divert those resources to other things.
+Going back to considering resources outside of computational, time is also a valuable resource, and multiple threads can get the job doen faster than a single thread most of the time.
 */
 import java.io.IOException;
 import java.io.File;
