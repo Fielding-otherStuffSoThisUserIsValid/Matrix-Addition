@@ -46,8 +46,10 @@ public class Main
 			{3, 2, 1}
 		};
 		
-		//testing code:
+		//TESTING CODE:
 		print2dArray(matrix1);
+		System.out.println();
+		print2dArray(matrix2);
 		//if matrix names change when we're using the actual matrices, change the names here.
 		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
 		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_RIGHT);
