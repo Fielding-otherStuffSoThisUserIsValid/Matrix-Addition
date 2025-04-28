@@ -27,11 +27,11 @@ public class ThreadOperation extends Thread {
 	}
 	
 	public static int[] getQuadrantIndexes(int rows, int columns, Quadrant quadrant) {
-		int rowStart;
-		int rowEnd;
-		int colStart;
-		int colEnd;
-		int[] indexes new int[4]
+		int rowStart = 0;
+		int rowEnd = 0;
+		int colStart = 0;
+		int colEnd = 0;
+		int[] indexes = new int[4];
 		
 		if (quadrant == Quadrant.UPPER_LEFT) {
 			rowStart = 0;
