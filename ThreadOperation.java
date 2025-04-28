@@ -23,6 +23,7 @@ public class ThreadOperation extends Thread {
 	@Override //not sure if i need this, double check
 	public void run() {
 		this.getQuadrantIndexes(this.matrixA.length, this.matrixA[0].length, this.quadrant);
+		
 	}
 	
 	public static int[] getQuadrantIndexes(int rows, int columns, Quadrant quadrant) {
@@ -30,6 +31,7 @@ public class ThreadOperation extends Thread {
 		int rowEnd;
 		int colStart;
 		int colEnd;
+		int[] indexes new int[4]
 		
 		if (quadrant == Quadrant.UPPER_LEFT) {
 			rowStart = 0;
@@ -52,6 +54,12 @@ public class ThreadOperation extends Thread {
 			colStart = (int) Math.ceil(columns/2 - 1);
 			colEnd = columns - 1;
 		}
-		return null;
+		
+		indexes[0] = rowStart;
+		indexes[1] = rowEnd;
+		indexes[2] = colStart;
+		indexes[3] = colEnd;
+		
+		return indexes;
 	}
 }
