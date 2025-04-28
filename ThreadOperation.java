@@ -28,6 +28,8 @@ public class ThreadOperation extends Thread {
 		int rowEnd;
 		int colStart;
 		int colEnd;
-		if
+		if (quadrant = Quadrant.Upper_Left) {
+			
+		}
 	}
 }
