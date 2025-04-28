@@ -28,8 +28,11 @@ public class ThreadOperation extends Thread {
 		int rowEnd;
 		int colStart;
 		int colEnd;
-		if (quadrant = Quadrant.Upper_Left) {
-			
+		
+		if (quadrant == Quadrant.UPPER_LEFT) {
+			rowStart = 0;
+			rowEnd = (int) Math.floor(rows/2);
 		}
+		return null;
 	}
 }
