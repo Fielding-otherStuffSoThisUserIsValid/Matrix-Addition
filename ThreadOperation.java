@@ -8,13 +8,15 @@ CSCI 2251 R01
 
 
 public class ThreadOperation extends Thread {
-	private int[][] submatrixOfA;
-	private int[][] submatrixOfB;
+	private int[][] matrixA;
+	private int[][] matrixB;
+	private int[][] matrixC;
 	Quadrant quadrant;
 	
-	public ThreadOperation(int[][] submatrixOfA, int[][] submatrixOfB, Quadrant quadrant) { //https://www.geeksforgeeks.org/enum-in-java/
-		this.submatrixOfA = submatrixOfA;
-		this.submatrixOfB = submatrixOfB;
+	public ThreadOperation(int[][] matrixA, int[][] matrixB, int[][] MatrixC, Quadrant quadrant) { //https://www.geeksforgeeks.org/enum-in-java/
+		this.matrixA = matrixA;
+		this.matrixB = matrixB;
+		this.matrixC = matrixC;
 		this.quadrant = quadrant;
 	}
 	

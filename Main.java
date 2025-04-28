@@ -60,13 +60,14 @@ public class Main
 		
 		int[][] matrix1 = createMatrixFromFile(numOfRows, numOfCols, fileIn);
 		int[][] matrix2 = createMatrixFromFile(numOfRows, numOfCols, fileIn);;
+		int[][] matrix3 = new int[numOfRows][numOfCols];
 		
 		
 		
-		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_LEFT);
-		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.UPPER_RIGHT);
-		ThreadOperation LowerLeftThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_LEFT);
-		ThreadOperation LowerRightThreadOperation = new ThreadOperation(matrix1, matrix2, Quadrant.LOWER_RIGHT);
+		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, matrix3, Quadrant.UPPER_LEFT);
+		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, matrix3, Quadrant.UPPER_RIGHT);
+		ThreadOperation LowerLeftThreadOperation = new ThreadOperation(matrix1, matrix2, matrix3, Quadrant.LOWER_LEFT);
+		ThreadOperation LowerRightThreadOperation = new ThreadOperation(matrix1, matrix2, matrix3, Quadrant.LOWER_RIGHT);
 		
 		UpperLeftThreadOperation.start();
 		UpperRightThreadOperation.start();
