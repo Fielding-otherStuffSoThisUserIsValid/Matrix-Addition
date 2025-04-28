@@ -22,7 +22,12 @@ public class ThreadOperation extends Thread {
 	
 	@Override //not sure if i need this, double check
 	public void run() {
-		this.getQuadrantIndexes(this.matrixA.length, this.matrixA[0].length, this.quadrant);
+		int[] indexes = this.getQuadrantIndexes(this.matrixA.length, this.matrixA[0].length, this.quadrant);
+		int rowStart = indexes[0];
+		int rowEnd = indexes[1];
+		int colStart = indexes[2];
+		int colEnd = indexes[3];
+		
 		
 	}
 	
