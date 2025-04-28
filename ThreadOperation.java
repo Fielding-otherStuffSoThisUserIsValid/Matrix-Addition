@@ -28,8 +28,10 @@ public class ThreadOperation extends Thread {
 		int colStart = indexes[2];
 		int colEnd = indexes[3];
 		
-		for (int i = rowStart; i < rowEnd; i ++) {
-			
+		for (int i = rowStart; i < rowEnd; i++) {
+			for (int j = colStart; j < colEnd; j++) {
+				matrixC[i][j] = matrixA[i][j] + matrixB[i][j];
+			}
 		}
 	}
 	
