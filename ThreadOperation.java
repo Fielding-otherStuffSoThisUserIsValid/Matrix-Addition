@@ -32,6 +32,8 @@ public class ThreadOperation extends Thread {
 		if (quadrant == Quadrant.UPPER_LEFT) {
 			rowStart = 0;
 			rowEnd = (int) Math.floor(rows/2);
+			colStart = 0;
+			colEnd = (int) Math.floor(columns/2);
 		} else if (quadrant == Quadrant.UPPER_RIGHT) {
 			rowStart = 0;
 			
