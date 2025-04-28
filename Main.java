@@ -62,8 +62,6 @@ public class Main
 		int[][] matrix2 = createMatrixFromFile(numOfRows, numOfCols, fileIn);;
 		int[][] matrix3 = new int[numOfRows][numOfCols];
 		
-		
-		
 		ThreadOperation UpperLeftThreadOperation = new ThreadOperation(matrix1, matrix2, matrix3, Quadrant.UPPER_LEFT);
 		ThreadOperation UpperRightThreadOperation = new ThreadOperation(matrix1, matrix2, matrix3, Quadrant.UPPER_RIGHT);
 		ThreadOperation LowerLeftThreadOperation = new ThreadOperation(matrix1, matrix2, matrix3, Quadrant.LOWER_LEFT);
@@ -83,6 +81,8 @@ public class Main
 			System.out.println("There was an InterruptedException: \n");
 			e.printStackTrace();
 		}
+		
+		print2dArray(matrix3);
 		
 		//TESTING CODE:
 		/*print2dArray(matrix1);

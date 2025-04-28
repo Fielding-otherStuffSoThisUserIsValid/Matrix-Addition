@@ -13,7 +13,7 @@ public class ThreadOperation extends Thread {
 	private int[][] matrixC;
 	Quadrant quadrant;
 	
-	public ThreadOperation(int[][] matrixA, int[][] matrixB, int[][] MatrixC, Quadrant quadrant) { //https://www.geeksforgeeks.org/enum-in-java/
+	public ThreadOperation(int[][] matrixA, int[][] matrixB, int[][] matrixC, Quadrant quadrant) { //https://www.geeksforgeeks.org/enum-in-java/
 		this.matrixA = matrixA;
 		this.matrixB = matrixB;
 		this.matrixC = matrixC;
