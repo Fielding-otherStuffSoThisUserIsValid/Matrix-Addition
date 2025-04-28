@@ -24,9 +24,10 @@ public class ThreadOperation extends Thread {
 	}
 	
 	public static int[] getQuadrantIndexes(int rows, int columns, Quadrant quadrant) {
-		int rowStart = 0;
+		int rowStart;
 		int rowEnd;
-		int colStart = 0;
+		int colStart;
 		int colEnd;
+		if
 	}
 }
