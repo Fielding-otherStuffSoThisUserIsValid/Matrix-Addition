@@ -39,6 +39,16 @@ public class ThreadOperation extends Thread {
 			rowEnd = (int) Math.floor(rows/2 - 1);
 			colStart = (int) Math.ceil(columns/2 - 1);
 			colEnd = columns - 1;
+		} else if (quadrant == Quadrant.LOWER_LEFT) {
+			rowStart = (int) Math.ceil(rows/2 - 1);
+			rowEnd = rows - 1;
+			colStart = 0;
+			colEnd = (int) Math.floor(columns/2 - 1);
+		} else if (quadrant == Quadrant.LOWER_RIGHT) {
+			rowStart = (int) Math.ceil(rows/2 - 1);
+			rowEnd = rows - 1;
+			colStart = (int) Math.ceil(columns/2 - 1);
+			colEnd = columns - 1;
 		}
 		return null;
 	}
