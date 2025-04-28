@@ -11,7 +11,7 @@ public class ThreadOperation extends Thread {
 	private int[][] matrixA;
 	private int[][] matrixB;
 	private int[][] matrixC;
-	Quadrant quadrant;
+	public Quadrant quadrant;
 	
 	public ThreadOperation(int[][] matrixA, int[][] matrixB, int[][] matrixC, Quadrant quadrant) { //https://www.geeksforgeeks.org/enum-in-java/
 		this.matrixA = matrixA;
