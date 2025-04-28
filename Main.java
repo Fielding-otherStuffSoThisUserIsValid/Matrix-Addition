@@ -93,9 +93,9 @@ public class Main
 		System.out.println(numOfCols);
 		//createMatrixFromFile(numOfRows, numOfCols, fileIn);
 		System.out.println();
-		//createMatrixFromFile(numOfRows, numOfCols, fileIn);*/
+		//createMatrixFromFile(numOfRows, numOfCols, fileIn);
 		System.out.println(matrix1.length+" = "+numOfRows);
-		System.out.println(matrix1[0].length+" = "+numOfCols);
+		System.out.println(matrix1[0].length+" = "+numOfCols);*/
 	}
 	
 	public static void print2dArray(int[][] matrix) {
