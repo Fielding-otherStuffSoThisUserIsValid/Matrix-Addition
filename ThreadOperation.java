@@ -31,12 +31,14 @@ public class ThreadOperation extends Thread {
 		
 		if (quadrant == Quadrant.UPPER_LEFT) {
 			rowStart = 0;
-			rowEnd = (int) Math.floor(rows/2);
+			rowEnd = (int) Math.floor(rows/2 - 1);
 			colStart = 0;
-			colEnd = (int) Math.floor(columns/2);
+			colEnd = (int) Math.floor(columns/2 - 1);
 		} else if (quadrant == Quadrant.UPPER_RIGHT) {
 			rowStart = 0;
-			
+			rowEnd = (int) Math.floor(rows/2 - 1);
+			colStart = (int) Math.ceil(columns/2 - 1);
+			colEnd = columns - 1;
 		}
 		return null;
 	}
